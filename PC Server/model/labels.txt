@@ -1,0 +1,4 @@
+0 Dental Plaque
+1 Tooth Loss
+2 Cracked Teeth
+3 Dental Caries
