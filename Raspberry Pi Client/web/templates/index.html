@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-Canynes Home</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/user.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand text-primary navbar-link" href="#">O-Canynes</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a class="bg-primary menu" href="#">Home </a></li>
+                    <li role="presentation"><a href="{{ url_for('prototype') }}" class="menu">Prototype </a></li>
+                    <li role="presentation"><a href="#" class="menu">About US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background: url(img/banner.jpg) no-repeat center;background-size:cover;border:none;" class="jumbotron hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-7 phone-preview">
+                    <div class="iphone-mockup"><img src="/img/iphone.svg" class="device">
+                        <div style="position:absolute;
+                        width:88%;
+                        height:77%;
+                        top:12%;
+                        border-radius:2px;
+                        left:6%;
+                        border:1px solid #444;
+                        background-color:#aaa;
+                        overflow:hidden;
+                        background:url(../img/layar-depan.jpg);
+                        background-size:cover;
+                        background-position:center;" class="screen"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-pull-3 get-it">
+                    <h1>We Bring AI to <span id="dentistry">Dentistry </span></h1>
+                    <p>We combine the power of recent Artifiicial Intelligence with the Dentistry World to make better Dental Health for everyone!</p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="{{ url_for('prototype') }}" id="prototype-btn">Go to Prototype</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="testimonials">
+        <h2 class="text-center text-success">This is our ideas to create better Dental Health through technology!</h2>
+        <blockquote>
+            <p> Artificial Intelligence is enhancing medical technology that will help doctor save more lives</p>
+            <footer>O-Canynes Team</footer>
+        </blockquote>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Fantastic Features</h2>
+                    <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row icon-features">
+                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
+                            <p>Cloud-based </p>
+                        </div>
+                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
+                            <p>Cheaper Service</p>
+                        </div>
+                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-hdd"></i>
+                            <p>Compact Size</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>O - Canynes © 2020</h5></div>
+                <div class="col-sm-6 social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

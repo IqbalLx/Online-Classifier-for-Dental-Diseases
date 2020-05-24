@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-Canynes Prototype v0.1</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="box"><img class="img-responsive video-feed" src="{{ url_for('video_feed') }}">
+            <div class="bar">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" aria-valuenow="{{ plaque }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ plaque }}%;"><span style="position: absolute;
+                      z-index: 2;
+                      padding-top: 15px;
+                      pading-left: 15px;
+                      color: black;
+                      justify-content: center;
+                      align-items: center;
+                      transform: translate(0%, -50%);">Dental Plaque {{ plaque }}%</span></div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" aria-valuenow="{{ loss }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ loss }}%;"><span style="position: absolute;
+                      z-index: 2;
+                      padding-top: 15px;
+                      pading-left: 15px;
+                      color: black;
+                      justify-content: center;
+                      align-items: center;
+                      transform: translate(0%, -50%);">Tooth Loss {{ loss }}%</span></div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" aria-valuenow="{{ crack }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ crack }}%;"><span style="position: absolute;
+                      z-index: 2;
+                      padding-top: 15px;
+                      pading-left: 15px;
+                      color: black;
+                      justify-content: center;
+                      align-items: center;
+                      transform: translate(0%, -50%);">Cracked Teeth {{ craced }}%</span></div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" aria-valuenow="{{ caries }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ caries }}%;"><span style="position: absolute;
+                      z-index: 2;
+                      padding-top: 15px;
+                      pading-left: 15px;
+                      color: black;
+                      justify-content: center;
+                      align-items: center;
+                      transform: translate(0%, -50%);">Dental Caries {{ caries }}%</span></div>
+                </div>
+            </div>
+            <div class="bar">
+                <form action="/post/" method="POST">
+                    <button class="btn btn-info btn-lg capture" name="postBtn" type="submit">Capture </button>
+                </form>
+                <a class="btn btn-default btn-lg back" role="button" href="{{ url_for('home') }}" style="margin-left: 20px">Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
